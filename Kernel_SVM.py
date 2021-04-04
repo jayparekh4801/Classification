@@ -33,7 +33,6 @@ class SVMKernelClassifierCreator :
     
     def predictor(self) :
         self.resultMatrix_pred = self.classifier.predict(self.featureMatrix_test_sca)
-        # accuracyCounter()
     
     def accuracyCounter(self) :
         print(confusion_matrix(self.resultMatrix_test, self.resultMatrix_pred))
