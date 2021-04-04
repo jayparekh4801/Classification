@@ -1,3 +1,9 @@
+###########################################NOTE###################################################################
+##### Make Sure That Your Data Has Not Categorical Data In It And Also Make Sure That Class Column Should Be The #
+##### Last Column Of Data                                                                                        #
+##################################################################################################################
+
+
 from Logistic_Regression import LogisticRegressionCreator
 from KNN_Classifier import KNNClassifierCreator
 from SVM_Classifier import SVMClassifierCreator
