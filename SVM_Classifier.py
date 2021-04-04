@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, confusion_matrix
 
 class SVMClassifierCreator :
     def __init__(self, file) :
@@ -36,5 +36,6 @@ class SVMClassifierCreator :
         # accuracyCounter()
     
     def accuracyCounter(self) :
+        print(confusion_matrix(self.resultMatrix_test, self.resultMatrix_pred))
         return accuracy_score(self.resultMatrix_test, self.resultMatrix_pred)
 
