@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 class NaiveBayesClassifierCreator :
     def __init__(self, file) :
         if(type(file) == type(str(file))) :
-            self.dataset = pd.read_csv("data.csv")
+            self.dataset = pd.read_csv(file)
             self.featureMatrix = self.dataset.iloc[ : , : -1].values
             self.resultMatrix = self.dataset.iloc[ : , -1].values
         
